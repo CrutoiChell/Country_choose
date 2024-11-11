@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); // Упрощенный импорт шрифта
+
+* {
+    font-family: 'Inter', sans-serif; // Добавляем запасной шрифт
+}
+
+.container {
+    width: 80%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 2rem; 
+    box-sizing: border-box;
+
+    .centred {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column; 
+        h1{
+            @media (max-width: 900px) {
+                font-size: 30px;
+                margin-left: 70px;
+            }
+        }
+
+        .planet {
+            width: 150px;
+            animation: rotate 5s linear infinite; 
+
+            
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

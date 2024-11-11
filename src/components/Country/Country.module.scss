@@ -1,0 +1,70 @@
+.container {
+    width: 379px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #B7B7B7;
+    border-radius: 25px;
+    box-shadow: -3px 6px 5px 3px rgba(0, 0, 0, 0.15);
+
+    .linkWiki {
+        max-width: 200px;
+        max-height: 40px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        margin-top: 10px;
+
+        &:hover {
+            color: #6ECFFF;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 15px;
+        }
+    }
+
+    .flag {
+        width: 318px;
+        height: 238px;
+        margin-top: 14px;
+        border-radius: 25px;
+        background-size: cover;
+        background-position: center;
+
+        @media (max-width: 900px) {
+            width: 159px;
+            height: 119px;
+        }
+    }
+
+    .divBottom {
+        width: 333px;
+        height: 111px;
+        padding: 0 0 10px 18px;
+        margin: 30px 0;
+        border: 1px solid #B7B7B7;
+        border-radius: 25px;
+        box-shadow: -3px 6px 5px 3px rgba(0, 0, 0, 0.15);
+
+        @media (max-width: 900px) {
+            width: 166px;
+            height: 100px;
+        }
+    }
+
+    .text {
+        @media (max-width: 900px) {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        width: 200px;
+        height: 320px;
+    }
+}
